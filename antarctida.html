@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Антарктида</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="arc.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="nav">
+                <a href="главная.html"><img class="logo" src="Assets/logo1.png"></a>
+
+                <nav>
+                    <a href="">Групповые туры</a>
+                    <a href="kruize.html">Круизы</a>
+
+
+            </div>
+            <div class="menu-burger">
+                <button class="ham">
+                    <!-- X and menu icon SVGs from material icons https://material.io/resources/icons/ -->
+
+                    <span class="xIcon material-icons">
+                        close
+                    </span>
+                </button>
+                <ul class="menuu">
+                    <li><a class="menuLink" href="главная.html">Главная</a></li>
+                    <li><a class="menuLink" href="pakistan.html">Северный Пакистан</a></li>
+                    <li><a class="menuLink" href="kruize.html">Круизы</a></li>
+                    <li><a class="menuLink" href="kalendar.html">Календарь</a></li>
+                    <li><a class="menuLink" href="kontact.html">Контакты</a></li>
+                    <li><a class="menuLink" href="idea.html">Идеи путешествий</a></li>
+                    <li><a class="menuLink" href="baikal.html">Байкал</a></li>
+                    <li><a class="menuLink" href="antarctida.html">Антарктида</a></li>
+                    <li><a class="menuLink" href="statia.html">Статья</a></li>
+
+                </ul>
+            </div>
+            </nav>
+        </div>
+        <script>
+            var menu = document.querySelector(".menuu")
+            var ham = document.querySelector(".ham")
+            var xIcon = document.querySelector(".xIcon")
+            var menuIcon = document.querySelector(".menuIcon")
+
+            ham.addEventListener("click", toggleMenu)
+
+            function toggleMenu() {
+                if (menu.classList.contains("showMenu")) {
+                    menu.classList.remove("showMenu");
+                    xIcon.style.display = "none";
+                    menuIcon.style.display = "block";
+                } else {
+                    menu.classList.add("showMenu");
+                    xIcon.style.display = "block";
+                    menuIcon.style.display = "none";
+                }
+            }
+
+            var menuLinks = document.querySelectorAll(".menuLink")
+
+            menuLinks.forEach(
+                function (menuLink) {
+                    menuLink.addEventListener("click", toggleMenu)
+                }
+            )
+        </script>
+            <div class="top">
+                <div class="zag">
+                    <h2>Антарктида</h2>
+                    <span>на Новый Год</span>
+                </div>
+                <img src="Assets/image.psd.png">
+            </div>
+    </header>
+    <main>
+        <div class="bron">
+            <div class="smt">
+                <p>Бронирование турa</p><span>Оставьте ваши данные и мы перезвоним вам для уточнения всех деталей для
+                    более точного бронирования!</span>
+            </div>
+            <div class="but">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Ваш номер телефона" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <input type="email" placeholder="Ваш email">
+                <button><a href="">ЗАБРОНИРОВАТЬ</a></button>
+            </div>
+        </div>
+
+        <div class="six">
+            <div class="text">
+                <h2>Откройте для себя <span class="yellow">Шестой континент</span> в роскошном обрамлении на борту
+                    новейшего экспедиционного лайнера
+                    <span class="yellow">SH
+                        Vega.</span>
+                </h2>
+                <p>Для этого путешествия мы выбрали даты в самый пик антарктического лета, когда богатый природный мир
+                    Антарктики раскрывается во всем своем многообразии.</p>
+            </div>
+
+            <div class="circ">
+                <img src="../практика/Assets/Untitled (3) (1).png"  class="i">
+                <img src="../практика/Assets/icons8-стрелка-24.png" style="    margin-top: 30px;">
+            </div>
+        </div>
+
+        <div class="wait">
+            <div class="info">
+                <h1>Что вас ожидает</h1>
+                <h3>Круиз в <span>Антарктиду и Южные Шетландские острова</span></h3>
+                <hr>
+                <p>
+                    Роскошная обстановка на борту новейшего экспедиционного судна класса люкс <span>SH Minerva</span>:
+                </p>
+                <ul>
+                    <li>Люксы с каминами </li>
+                    <li>Открытый бассейн-инфинити с видом на айсберги </li>
+                    <li>Рестораны высокой кухни с блюдами
+                        от знаменитых шеф-поваров</li>
+                    <li>Проживание в отеле 5* с потрясающим видом
+                        на Буэнос-Айрес накануне старта круиза</li>
+                    <li>Чартерный перелет в Ушуаю</li>
+                    <li>
+                        Исследование самых живописных уголков Антарктиды,
+                        не включенных в стандартные маршруты</li>
+                </ul>
+                <span>этот круиз способен по максимуму воплотить ваши мечты о путешествии на самый юг Земли.</span>
+            </div>
+
+            <div class="guide">
+                <img src="https://s3-alpha-sig.figma.com/img/97c6/9638/82839b62ab7bba15af2ecf27efd0dfaf?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mawiGxJMXbce6xJS4Pmt7r~nSzOUbVKaP~4hWkJ0at5gRS6tSEcBEwat1MIfs7orsG56tstPsiFHteOdD678dd0B1lsRmtT~xUdaIVokS3vx2IJOprgVHrahgYxdcAH9u2Z3qChyKaRY-KDX7R3PFrCdSv9M7xIPy~PVm2-cy-DpWeeCq~Ry~sMPQ~23J4gSOQlf1IbKcJKD-MunPIlCuH9wkLL~-ikvVg9ueRR8vozQBYliSLf9fQofwSvQX9WOrEN~JqmXBxcXy1CLkrSkhVOQqBCMHOfcberJYmWO9KJWy8EGm6vQ19iBzdKEWOmwDBKMBRWZ4Js2uPP8oM7nDA__"
+                    alt="">
+                <figcaption>Научный руководитель путешествия морский биолоr</figcaption>
+                <p>Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции
+                    позволяет оценить значение соответствующий условий активизации.</p>
+            </div>
+
+        </div>
+
+        <div class="foto">
+
+            <div class="text">
+                <h2><span>Топ-5</span> впечатлений этого путешествия:</h2>
+
+                <ol>
+                    <li>Вы пересечете самый широкий на Земле пролив Дрейка и получите медную серьгу, которую в Англии
+                        имели право носить лишь моряки, преодолевшие этот легендарный пролив</li>
+                    <li>Пройдете по Антарктическому проливу через «Аллею айсбергов» — в этом месте ледяные замки
+                        достигают высоты с многоэтажный дом</li>
+                    <li>Увидите вблизи колонии 3 видов пингвинов: папуанский, Адели и антарктический — в период, когда
+                        появляются детеныши</li>
+                    <li>В проливе Жерлаш встретите тюленей и морских леопардов, и если повезет, сможете сфотографировать
+                        хвост горбатого кита или прыжок финвала</li>
+                    <li>Сможете искупаться в Южном океане, температура которого колеблется от -2 до +10°С</li>
+                </ol>
+            </div>
+            <div class="slaider">
+                <div class="f">
+                    <img src="./Assets/foto.jpg">
+                    <img src="./Assets/foto.jpg">
+
+
+                </div>
+                <div class="f">
+                    <img src="./Assets/foto.jpg">
+
+                    <img src="./Assets/foto.jpg">
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="programm">
+            <div class="zag">
+                <h1>ПРОГРАММА</h1>
+                
+                <h2>тура  <span>по дням</span></h2>
+            
+            </div>
+            <div class="kart">
+
+                <div class="fot"style="background-image: url(https://s3-alpha-sig.figma.com/img/f9f5/aabf/0fc541ddb409b0f723582fee7c9c66ef?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mi78D0~Iq6vyiM1ScA5vSPPAxK5EHXUTxONhcY9I0uV6LbkIreuo0udY3SJVam558fiWq6R3ddSof~9MJBRYydFMml7fL~KelVoc8Xkz0u3t9hOWJ45379Eqa0UT2m3Zre-j5oxwTVXy6mY-GahvHNHT6YmhlsSb9I5-tJ5mqFCbpb8OQl~M-vBbRMGmjnu9LZTZtyBdDZNBWj79Srb0~emJd3Rjeov-1NLYZXJhjPf39yWUUrxl-De9OrIAAjHFQe6NAoUfVBExWD~Yt-reKoIeM06CljUIVHLFQIrfvkMBep3cMuSaOxvQ5jqaml8ax9IYUzu0cE~GzQnfUBfLLQ__);" >
+
+                    <div class="rasp">
+                        <div class="inf">
+                            <h1><span>Горы</span> Фандер</h1>
+                            <br>
+                            <h3><img src="../практика/Assets/icons8-календарь-50.png">  7 октября</h3>
+                            <br>
+                            <p>Прибытие в Международный Аэропорт имени Беназир Бхутто Турецкими авиалиниями в 04:00 утра. 
+                                <br>
+                                Примерно 1 час визовых формальностей. Получение багажа. Пересадка на внутренний рейс в 10:30 утра до Гилгита. Готовимся, день будет длинным.
+                                <br>
+
+                                По прилету в Гилгит мы пересаживаемся на наши джипы и отправляемся в долину Фандер (переезд 4 часа). 
+                                <br>
+                                Размещение в отеле. 
+                                <br>
+                                Традиционный вечер знакомств с вручением паганелевских футболок и значков.</p>
+                                <ul>
+                                    <li>Питание: обед, ужин</li>
+                                    <li>Размещение: отель</li>
+                                    <li>Расстояние: 200 км</li>
+                                    <li>Время в пути: 5 часов</li>
+                                    <li>Высота: 2800 м</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="kart">
+
+                <div class="fot"style="background-image: url(https://s3-alpha-sig.figma.com/img/bd77/3917/eea5f1ac5cc83eb5118045f541e446ac?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TbVE0uwjhFo7gzcAQHPXBT4bOJF4PCARH9NQGfip6Fnl5CB-hRG8vk9t~Kg19pxnrPWW8Z3~v3GiBqkzVljd~kBAxuR0p9MWWjzb6lCFecGSp0qUFA~kYbcNPjU9bz6tPxSGp2tn7GCbtitgt6F451cQlg77n-9-WVOPRYezHiEnnLf70KGJft867qQjUEAJAwwcQrLVUPIofaWlbh3VyNlWLe-TAc~1oENbG2W0jCgeG1svKRg6QZB6LInjyC7opgerfFm2DxNZPF4rngsrszxWO3BlsmspC-zpyKttRpHfC0tFN5IeqjOREliPTPk~Lc0OFs-ThQOo5xgfcfqQ-g__);" >
+
+                    <div class="rasp">
+                        <div class="inf">
+                            <h1><span>Горы</span> Фандер</h1>
+                            <br>
+                            <h3><img src="./Assets/icons8-календарь-50.png">  7 октября</h3>
+                            <br>
+                            <p>Прибытие в Международный Аэропорт имени Беназир Бхутто Турецкими авиалиниями в 04:00 утра. 
+                                <br>
+                                Примерно 1 час визовых формальностей. Получение багажа. Пересадка на внутренний рейс в 10:30 утра до Гилгита. Готовимся, день будет длинным.
+                                <br>
+
+                                По прилету в Гилгит мы пересаживаемся на наши джипы и отправляемся в долину Фандер (переезд 4 часа). 
+                                <br>
+                                Размещение в отеле. 
+                                <br>
+                                Традиционный вечер знакомств с вручением паганелевских футболок и значков.</p>
+                                <ul>
+                                    <li>Питание: обед, ужин</li>
+                                    <li>Размещение: отель</li>
+                                    <li>Расстояние: 200 км</li>
+                                    <li>Время в пути: 5 часов</li>
+                                    <li>Высота: 2800 м</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kart">
+
+                <div class="fot"style="background-image: url(https://s3-alpha-sig.figma.com/img/27ae/0b61/4126e30adf25bf7261e28622e4df4e68?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oOQhXyAEBeTafQ844pCpmalr7ZW9XCGjr8YpTQGwNoFrCM4fWeJy6NaebOzqz2oZL0uWHwOzGeAq4YzvUBVTPcZ4utMOn-z0sxRULUeY2wl4ZWkQ5G~wuOoOCUDzoodaL4nRmHioyffP9Q9Xuh8PxZmFe0nKr6E8VFjOKw5zcLzalPeiR9tcs5IxF5W1FofPapSHnpbkJmsD6vNRwl2e7dyNRXuvAChlrlkQxpT4ZRqc7U~PXGY0RnRZ14b3fkrENgxCIjzM08QS9JdbU7X2z3-5TU0Bu9dKJNWSEOPoJAj1Yc0cqyBpMMrWveDLGLCeSaUxTRMuyQWotnGotaZNXA__);" >
+
+                    <div class="rasp">
+                        <div class="inf">
+                            <h1><span>Горы</span> Фандер</h1>
+                            <br>
+                            <h3><img src="./Assets/icons8-календарь-50.png">  7 октября</h3>
+                            <br>
+                            <p>Прибытие в Международный Аэропорт имени Беназир Бхутто Турецкими авиалиниями в 04:00 утра. 
+                                <br>
+                                Примерно 1 час визовых формальностей. Получение багажа. Пересадка на внутренний рейс в 10:30 утра до Гилгита. Готовимся, день будет длинным.
+                                <br>
+
+                                По прилету в Гилгит мы пересаживаемся на наши джипы и отправляемся в долину Фандер (переезд 4 часа). 
+                                <br>
+                                Размещение в отеле. 
+                                <br>
+                                Традиционный вечер знакомств с вручением паганелевских футболок и значков.</p>
+                                <ul>
+                                    <li>Питание: обед, ужин</li>
+                                    <li>Размещение: отель</li>
+                                    <li>Расстояние: 200 км</li>
+                                    <li>Время в пути: 5 часов</li>
+                                    <li>Высота: 2800 м</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="form">
+            <p class="left"><b>Мы строим маршрут</b> так, чтобы за неделю показать самые интересные места региона.
+                Включаем в
+                программу только лучшее проживание, транспорт, питание, людей и достопримечательности. <b>Работаем с
+                    группами</b> до 10 человек и лично их сопровождаем.</p>
+
+            <img src="./Assets/компас.PNG">
+            <p class="right"><b>Мы строим маршрут</b> так, чтобы за неделю показать самые интересные места региона.
+                Включаем в
+                программу только лучшее проживание, транспорт, питание, людей и достопримечательности. <b>Работаем с
+                    группами</b> до 10 человек и лично их сопровождаем.</p>
+        </div>
+        <div class="forma">
+            <h1>МЫ ВСЕГДА НА СВЯЗИ!</h1>
+            <div class="v">
+                <form>
+
+                    <input type="text" id="username" name="username" placeholder="ИМЯ" required>
+
+
+                    <input type="email" id="email" name="email"placeholder="ВАШ НОМЕР ТЕЛЕФОНА" required>
+
+                    <input type="password" id="password" name="password" placeholder="ВАША ЭЛЕКТРОННАЯ ПОЧТА"required>
+
+                </form><button type="submit">ОТПРАВИТЬ</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer"><nav>
+            <h2>О компании</h2>
+            <ul>
+                <li><a href="">Преимущества</a></li>
+                <li><a href="">Команда</a></li>
+                <li><a href="">Фотоотчеты</a></li>
+                <li><a href="">Документы и лицензии</a></li>
+                
+            </ul>
+        </nav>
+
+        <nav>
+            <h2>Услуги</h2>
+            <ul>
+                <li><a href="">Выбрать тур</a></li>
+                <li><a href="">Бронь</a></li>
+                <li><a href="">Оплата </a></li>
+                <li><a href="">Гарантия</a></li>
+                
+            </ul>
+        </nav>
+        <img src="Assets/logo.PNG" class="L">
+        <nav>
+            <h2>Контакты</h2>
+            <ul>
+                <li><img src="Assets/icons8-gps-50.png"><a href="">Москва</a></li>
+                <li><img src="Assets/icons8-телефон-50.png"><a href="">8 800 555 35 35</a></li>
+                <li><img src="Assets/icons8-конверт-50.png"><a href="">aaaa@aaaa.com</a></li>
+                
+                
+            </ul>
+        </nav></div>
+        <hr>
+        <p>Политика обработки персональных данныx</p>
+    </footer>
+</body>
+
+</html>

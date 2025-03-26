@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календарь</title>
+    <link rel="stylesheet" href="k.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="nav">
+                <a href="главная.html"><img class="logo" src="Assets/logo1.png"></a>
+
+                <nav>
+                    <a href="">Групповые туры</a>
+                    <a href="kruize.html">Круизы</a>
+
+                    
+                    </div><div class="menu-burger">
+                        <button class="ham">
+                            <!-- X and menu icon SVGs from material icons https://material.io/resources/icons/ -->
+
+                            <span class="xIcon material-icons">
+                                close
+                            </span>
+                        </button>
+                        <ul class="menuu">
+                            <li><a class="menuLink" href="главная.html">Главная</a></li>
+                            <li><a class="menuLink" href="pakistan.html">Северный Пакистан</a></li>
+                            <li><a class="menuLink" href="kruize.html">Круизы</a></li>
+                            <li><a class="menuLink" href="kalendar.html">Календарь</a></li>
+                            <li><a class="menuLink" href="kontact.html">Контакты</a></li>
+                            <li><a class="menuLink" href="idea.html">Идеи путешествий</a></li>
+                            <li><a class="menuLink" href="baikal.html">Байкал</a></li>
+                            <li><a class="menuLink" href="antarctida.html">Антарктида</a></li>
+                            <li><a class="menuLink" href="statia.html">Статья</a></li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <script>
+                var menu = document.querySelector(".menuu")
+                var ham = document.querySelector(".ham")
+                var xIcon = document.querySelector(".xIcon")
+                var menuIcon = document.querySelector(".menuIcon")
+
+                ham.addEventListener("click", toggleMenu)
+
+                function toggleMenu() {
+                    if (menu.classList.contains("showMenu")) {
+                        menu.classList.remove("showMenu");
+                        xIcon.style.display = "none";
+                        menuIcon.style.display = "block";
+                    } else {
+                        menu.classList.add("showMenu");
+                        xIcon.style.display = "block";
+                        menuIcon.style.display = "none";
+                    }
+                }
+
+                var menuLinks = document.querySelectorAll(".menuLink")
+
+                menuLinks.forEach(
+                    function (menuLink) {
+                        menuLink.addEventListener("click", toggleMenu)
+                    }
+                )
+            </script>
+
+            <div class="top">
+                <div class="zag">
+                    <h2>КАЛЕНДАРЬ</h2>
+                    <span>ПУТЕШЕСТВИЙ</span>
+                </div>
+            </div>
+    </header>
+    <main>
+        <div class="choose">
+            <hr>
+            <a href=""><button></button></a>
+            <a href=""><button class="active"></button></a>
+            <a href=""><button></button></a>
+
+
+        </div>
+        <a href="pakistan.html" style="align-self: flex-end;color: #ffff; margin-right: 70px;">узнать больше</a>
+
+        <div class="first">
+            <div class="prew">
+                <img
+                    src="https://s3-alpha-sig.figma.com/img/5910/1af3/b3caac256e9bd6317e5f33f8ebaf270a?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=q5SjG1UEfIuG0ZllRpBqiYqum2rV3tPLpD6js7IJrg73cglY3XiXkZsxhu~ejTcdFwFiEV-iBQx65hu41MZFnWfVpBcthegFB7mFR67mp7ilhLGs6X9EC5nzKDrsNUubTZCFC4L2ICkZ6LyZswSl860l3TFC~W4L4l3JLqElMg0LS1UzqCDrKVBVkcLXkpR0Exp1HpKZGBI9GVw3pc731q6a1WkE5zDWc3Fx0lNY0DSDpy9G3u7iLM12qYma5nLw7DVUQgS339b0Xv~o3CGZPVYqa8yjAcxY4ySF20Sg5cYKcxdSy7tsvnr2mBm1vllS1jbY8SzNoig3gP0SL447zQ__">
+            </div>
+            <div class="info">
+                <h2>ПАКИСТАН</h2>
+                <br>
+                <p>Осень в Пакистане, самое хорошее время для путешествия, температура воздуха днём порядка +20
+                    градусов. НО, мы будем подниматься в горы, поэтому необходимо брать в минимальном количестве теплую
+                    одежду.
+                    Максимальный трек в горах составляет 6 км до северного базового лагеря Нанга Парбат, Фейри Медоуз (2
+                    часа) – высота 3200 метров. Средняя высота всей поездки 2000 метров.</p>
+                
+                    <div class="s">
+                        <div class="l">
+                            <div class="lo">
+                                <div class="c"><img src="./Assets/icons8-контроллер-50.png">
+                                <b>Вид отдыха</b></div>
+                                <br>
+                                <p>Фотопутешествие, горный трекинг, приключения</p>
+                                <hr>
+                            </div>
+                            <div class="lo">
+                                <div class="c"><img src="./Assets/icons8-часы-50.png">
+                                <b>Даты</b></div>
+                                <br>
+                                <p>6 октября – 20 октября 2020 года</p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="l">
+                            <div class="lo">
+                                <div class="c"><img src="./Assets/icons8-деньги-48.png">
+                                <b>Стоимость</b></div>
+                                <br>
+                                <p>Стоимость участия  составляет 2690 евро</p>
+                                <hr>
+                            </div>
+                            <div class="lo">
+                                <div class="c"><img src="./Assets/icons8-документы-66.png">
+                                <b>Требования</b></div>
+                                <br>
+                                <p>Хорошая физическая форма, опыт горных походов </p>
+                                <hr>
+                            </div>
+                        </div>
+                        <button><a href="">ЗАБРОНИРОВАТЬ</a></button>
+                    </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="form">
+            <p class="left"><b>Мы строим маршрут</b> так, чтобы за неделю показать самые интересные места региона.
+                Включаем в
+                программу только лучшее проживание, транспорт, питание, людей и достопримечательности. <b>Работаем с
+                    группами</b> до 10 человек и лично их сопровождаем.</p>
+
+            <img src="./Assets/компас.PNG">
+            <p class="right"><b>Мы строим маршрут</b> так, чтобы за неделю показать самые интересные места региона.
+                Включаем в
+                программу только лучшее проживание, транспорт, питание, людей и достопримечательности. <b>Работаем с
+                    группами</b> до 10 человек и лично их сопровождаем.</p>
+        </div>
+        <div class="forma">
+            <h1>МЫ ВСЕГДА НА СВЯЗИ!</h1>
+            <div class="v">
+                <form>
+
+                    <input type="text" id="username" name="username" placeholder="ИМЯ" required>
+
+
+                    <input type="email" id="email" name="email" placeholder="ВАШ НОМЕР ТЕЛЕФОНА" required>
+
+                    <input type="password" id="password" name="password" placeholder="ВАША ЭЛЕКТРОННАЯ ПОЧТА" required>
+
+                </form><button type="submit">ОТПРАВИТЬ</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer"><nav>
+            <h2>О компании</h2>
+            <ul>
+                <li><a href="">Преимущества</a></li>
+                <li><a href="">Команда</a></li>
+                <li><a href="">Фотоотчеты</a></li>
+                <li><a href="">Документы и лицензии</a></li>
+                
+            </ul>
+        </nav>
+
+        <nav>
+            <h2>Услуги</h2>
+            <ul>
+                <li><a href="">Выбрать тур</a></li>
+                <li><a href="">Бронь</a></li>
+                <li><a href="">Оплата </a></li>
+                <li><a href="">Гарантия</a></li>
+                
+            </ul>
+        </nav>
+        <img src="Assets/logo.PNG" class="L">
+        <nav>
+            <h2>Контакты</h2>
+            <ul>
+                <li><img src="Assets/icons8-gps-50.png"><a href="">Москва</a></li>
+                <li><img src="Assets/icons8-телефон-50.png"><a href="">8 800 555 35 35</a></li>
+                <li><img src="Assets/icons8-конверт-50.png"><a href="">aaaa@aaaa.com</a></li>
+                
+                
+            </ul>
+        </nav></div>
+        <hr>
+        <p>Политика обработки персональных данныx</p>
+    </footer>
+
+</body>
+
+</html>

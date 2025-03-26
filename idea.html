@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Идеи путешествий</title>
+    <link rel="stylesheet" href="idea.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="nav">
+                <a href="главная.html"><img class="logo" src="Assets/logo1.png"></a>
+
+                <nav>>
+                    <a href="">Групповые туры</a>
+                    <a href="kruize.html">Круизы</a>
+
+
+            </div>
+            <div class="menu-burger">
+                <button class="ham">
+                    <!-- X and menu icon SVGs from material icons https://material.io/resources/icons/ -->
+
+                    <span class="xIcon material-icons">
+                        close
+                    </span>
+                </button>
+                <ul class="menuu">
+                    <li><a class="menuLink" href="главная.html">Главная</a></li>
+                    <li><a class="menuLink" href="pakistan.html">Северный Пакистан</a></li>
+                    <li><a class="menuLink" href="kruize.html">Круизы</a></li>
+                    <li><a class="menuLink" href="kalendar.html">Календарь</a></li>
+                    <li><a class="menuLink" href="kontact.html">Контакты</a></li>
+                    <li><a class="menuLink" href="idea.html">Идеи путешествий</a></li>
+                    <li><a class="menuLink" href="baikal.html">Байкал</a></li>
+                    <li><a class="menuLink" href="antarctida.html">Антарктида</a></li>
+                    <li><a class="menuLink" href="statia.html">Статья</a></li>
+
+                </ul>
+            </div>
+            </nav>
+        </div>
+        <script>
+            var menu = document.querySelector(".menuu")
+            var ham = document.querySelector(".ham")
+            var xIcon = document.querySelector(".xIcon")
+            var menuIcon = document.querySelector(".menuIcon")
+
+            ham.addEventListener("click", toggleMenu)
+
+            function toggleMenu() {
+                if (menu.classList.contains("showMenu")) {
+                    menu.classList.remove("showMenu");
+                    xIcon.style.display = "none";
+                    menuIcon.style.display = "block";
+                } else {
+                    menu.classList.add("showMenu");
+                    xIcon.style.display = "block";
+                    menuIcon.style.display = "none";
+                }
+            }
+
+            var menuLinks = document.querySelectorAll(".menuLink")
+
+            menuLinks.forEach(
+                function (menuLink) {
+                    menuLink.addEventListener("click", toggleMenu)
+                }
+            )
+        </script>
+            <div class="top">
+                <div class="zag">
+                    <h2>ИДЕИ</h2>
+                    <span>ПУТЕШЕСТВИЙ</span>
+                </div>
+            </div>
+    </header>
+
+
+    <main>
+
+
+        <div class="stat">
+            <img src="Assets/icons8-стрелка-24.png" class="ltr">
+            <div class="one" style="background-image: url(Assets/854531f69ab2dbe5dbc445f105472ca8.png);">
+
+                <div class="vn">
+                    <a href="statia.html"> <h2><img src="Assets/icons8-документы-66.png">СТАТЬЯ</h2>
+                    <p>Фотопутешествие, горный трекинг, приключения</p>
+                </div></a>
+            </div>
+
+            <div class="one" style="background-image: url(Assets/12adb23612fd6fedf15eef303e5beb8e.png);">
+                <div class="vn">
+                    <a href="statia.html"><h2><img src="Assets/icons8-документы-66.png">СТАТЬЯ</h2>
+                    <p>Фотопутешествие, горный трекинг, приключения</p>
+                </div></a>
+            </div>
+
+            <div class="one" style="background-image: url(Assets/bb8a3f5dd6ad92047c4d6f2d44ec299e.png);">
+                <div class="vn">
+                    <a href="statia.html"><h2><img src="Assets/icons8-документы-66.png">СТАТЬЯ</h2>
+                    <p>Фотопутешествие, горный трекинг, приключения</p>
+                </div></a>
+            </div>
+
+            <div class="one" style="background-image: url(Assets/12beb5f38c7a948f32d7a3770a80d228.png);">
+                <div class="vn">
+                    <a href="statia.html"><h2><img src="Assets/icons8-документы-66.png">СТАТЬЯ</h2>
+                    <p>Фотопутешествие, горный трекинг, приключения</p>
+                </div></a>
+            </div>
+            <img src="./Assets/icons8-стрелка-24.png" class="rtr">
+
+        </div> 
+
+        <div class="idea">
+
+            <div class="zag">
+                <h3 class="a">Идеи</h3>
+                <h3>путешествий</h3>
+                <a href="idea.html">Читать все публикации</a>
+            </div>
+
+            <div class="butt">
+                <button id="active"><a href="">Россия</a></button>
+                <button><a href="">Европа</a></button>
+                <button><a href="">Азия</a></button>
+                <button><a href=""> Антарктида</a></button>
+                <button><a href=""> Круизы</a></button>
+            </div>
+
+            <hr>
+
+            <div class="var">
+                <div class="data">
+
+                    <p>АВГУСТ</p>
+                    <h2>23</h2>
+                </div>
+                <img src="Assets/5ab468661fc4df46ddc0d4166a0cc832.jpg">
+                <div class="tex">
+                    <h3>КАМЧАТКА</h3>
+                    <br>
+                    <p>Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции
+                        позволяет оценить значение соответствующий условий активизации. Товарищи! консультация с широким
+                        активом играет важную роль в формировании дальнейших направлений развития. </p>
+                    <br>
+                    <a href="">Узнать больше</a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="var">
+                <div class="data">
+
+                    <p>АВГУСТ</p>
+                    <h2>15</h2>
+                </div>
+                <img src="Assets/95cd639d0e0f52c0f8a6a06bd1f7c7ea.jpg">
+                <div class="tex">
+                    <h3>КАМЧАТКА</h3>
+                    <br>
+                    <p>Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции
+                        позволяет оценить значение соответствующий условий активизации. Товарищи! консультация с широким
+                        активом играет важную роль в формировании дальнейших направлений развития. </p>
+                    <br>
+                    <a href="">Узнать больше</a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="var">
+                <div class="data">
+
+                    <p>ИЮЛЬ</p>
+                    <h2>15</h2>
+                </div>
+                <img src="Assets/193ade3c5aab4c9240a6e5640c6e35ad.jpg">
+                <div class="tex">
+                    <h3>КАМЧАТКА</h3>
+                    <br>
+                    <p>Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции
+                        позволяет оценить значение соответствующий условий активизации. Товарищи! консультация с широким
+                        активом играет важную роль в формировании дальнейших направлений развития. </p>
+                    <br>
+                    <a href="">Узнать больше</a>
+                </div>
+            </div>
+            <hr>
+
+        </div>
+
+
+        <div class="form">
+            <p class="left"><b>Мы строим маршрут</b> так, чтобы за неделю показать самые интересные места региона.
+                Включаем в
+                программу только лучшее проживание, транспорт, питание, людей и достопримечательности. <b>Работаем с
+                    группами</b> до 10 человек и лично их сопровождаем.</p>
+
+            <img src="./Assets/компас.PNG">
+            <p class="right"><b>Мы строим маршрут</b> так, чтобы за неделю показать самые интересные места региона.
+                Включаем в
+                программу только лучшее проживание, транспорт, питание, людей и достопримечательности. <b>Работаем с
+                    группами</b> до 10 человек и лично их сопровождаем.</p>
+        </div>
+        <div class="forma">
+            <h1>МЫ ВСЕГДА НА СВЯЗИ!</h1>
+            <div class="v">
+                <form>
+
+                    <input type="text" id="username" name="username" placeholder="ИМЯ" required>
+
+
+                    <input type="email" id="email" name="email" placeholder="ВАШ НОМЕР ТЕЛЕФОНА" required>
+
+                    <input type="password" id="password" name="password" placeholder="ВАША ЭЛЕКТРОННАЯ ПОЧТА" required>
+
+                </form><button type="submit">ОТПРАВИТЬ</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer"><nav>
+            <h2>О компании</h2>
+            <ul>
+                <li><a href="">Преимущества</a></li>
+                <li><a href="">Команда</a></li>
+                <li><a href="">Фотоотчеты</a></li>
+                <li><a href="">Документы и лицензии</a></li>
+                
+            </ul>
+        </nav>
+
+        <nav>
+            <h2>Услуги</h2>
+            <ul>
+                <li><a href="">Выбрать тур</a></li>
+                <li><a href="">Бронь</a></li>
+                <li><a href="">Оплата </a></li>
+                <li><a href="">Гарантия</a></li>
+                
+            </ul>
+        </nav>
+        <img src="Assets/logo.PNG" class="L">
+        <nav>
+            <h2>Контакты</h2>
+            <ul>
+                <li><img src="Assets/icons8-gps-50.png"><a href="">Москва</a></li>
+                <li><img src="Assets/icons8-телефон-50.png"><a href="">8 800 555 35 35</a></li>
+                <li><img src="Assets/icons8-конверт-50.png"><a href="">aaaa@aaaa.com</a></li>
+                
+                
+            </ul>
+        </nav></div>
+        <hr>
+        <p>Политика обработки персональных данныx</p>
+    </footer>
+
+</body>
+
+</html>

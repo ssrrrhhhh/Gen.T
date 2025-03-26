@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статья</title>
+    <link rel="stylesheet" href="statia.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="nav">
+                <a href="главная.html"><img class="logo" src="Assets/logo1.png"></a>
+
+                <nav>
+                    <a href="">Групповые туры</a>
+                    <a href="kruize.html">Круизы</a>
+
+
+            </div>
+            <div class="menu-burger">
+                <button class="ham">
+                    <!-- X and menu icon SVGs from material icons https://material.io/resources/icons/ -->
+
+                    <span class="xIcon material-icons">
+                        close
+                    </span>
+                </button>
+                <ul class="menuu">
+                    <li><a class="menuLink" href="главная.html">Главная</a></li>
+                    <li><a class="menuLink" href="pakistan.html">Северный Пакистан</a></li>
+                    <li><a class="menuLink" href="kruize.html">Круизы</a></li>
+                    <li><a class="menuLink" href="kalendar.html">Календарь</a></li>
+                    <li><a class="menuLink" href="kontact.html">Контакты</a></li>
+                    <li><a class="menuLink" href="idea.html">Идеи путешествий</a></li>
+                    <li><a class="menuLink" href="baikal.html">Байкал</a></li>
+                    <li><a class="menuLink" href="antarctida.html">Антарктида</a></li>
+                    <li><a class="menuLink" href="statia.html">Статья</a></li>
+
+                </ul>
+            </div>
+            </nav>
+        </div>
+        <script>
+            var menu = document.querySelector(".menuu")
+            var ham = document.querySelector(".ham")
+            var xIcon = document.querySelector(".xIcon")
+            var menuIcon = document.querySelector(".menuIcon")
+
+            ham.addEventListener("click", toggleMenu)
+
+            function toggleMenu() {
+                if (menu.classList.contains("showMenu")) {
+                    menu.classList.remove("showMenu");
+                    xIcon.style.display = "none";
+                    menuIcon.style.display = "block";
+                } else {
+                    menu.classList.add("showMenu");
+                    xIcon.style.display = "block";
+                    menuIcon.style.display = "none";
+                }
+            }
+
+            var menuLinks = document.querySelectorAll(".menuLink")
+
+            menuLinks.forEach(
+                function (menuLink) {
+                    menuLink.addEventListener("click", toggleMenu)
+                }
+            )
+        </script>
+            <div class="top">
+                <div class="zag">
+                    <h2>СТАТЬЯ</h2>
+                </div>
+            </div>
+    </header>
+
+
+    <main>
+
+
+        <div class="stat">
+            <img src="Assets/icons8-стрелка-24.png" class="ltr">
+            <div class="one" style="background-image: url(Assets/854531f69ab2dbe5dbc445f105472ca8.png);">
+
+                <div class="vn">
+                  <h2><img src="Assets/icons8-документы-66.png">СТАТЬЯ</h2>
+                    <p>Фотопутешествие, горный трекинг, приключения</p>
+                </div>
+            </div>
+
+            <div class="one" style="background-image: url(Assets/12adb23612fd6fedf15eef303e5beb8e.png);">
+                <div class="vn">
+                    <h2><img src="Assets/icons8-документы-66.png">СТАТЬЯ</h2>
+                    <p>Фотопутешествие, горный трекинг, приключения</p>
+                </div>
+            </div>
+
+            <div class="one" style="background-image: url(Assets/bb8a3f5dd6ad92047c4d6f2d44ec299e.png);">
+                <div class="vn">
+                    <h2><img src="Assets/icons8-документы-66.png">СТАТЬЯ</h2>
+                    <p>Фотопутешествие, горный трекинг, приключения</p>
+                </div>
+            </div>
+
+            <div class="one" style="background-image: url(Assets/12beb5f38c7a948f32d7a3770a80d228.png);">
+                <div class="vn">
+                    <h2><img src="Assets/icons8-документы-66.png">СТАТЬЯ</h2>
+                    <p>Фотопутешествие, горный трекинг, приключения</p>
+                </div>
+            </div>
+            <img src="./Assets/icons8-стрелка-24.png" class="rtr">
+
+        </div>
+
+        </div>
+        <div class="self">
+
+            <h2>ТЕМА <span>СТАТЬИ</span></h2>
+            <img src="Assets/bb8a3f5dd6ad92047c4d6f2d44ec299e.png">
+            <h3>Осень <span>в Пакистане</span>, самое хорошее время для путешествия, температура воздуха днём порядка
+                +20
+                градусов. НО, мы будем подниматься в горы, поэтому необходимо брать в минимальном количестве теплую
+                одежду.</h3>
+            <p>Осень в Пакистане, самое хорошее время для путешествия, температура воздуха днём порядка +20 градусов.
+                НО, мы будем подниматься в горы, поэтому необходимо брать в минимальном количестве теплую одежду.
+                Максимальный трек в горах составляет 6 км до северного базового лагеря Нанга Парбат, Фейри Медоуз (2
+                часа) – высота 3200 метров. Средняя высота всей поездки 2000 метров.
+            </p>
+            <p> Единственный перевал, который мы проедем за половину дня - Плато Диосай, высота 4000 метров. Горная
+                болезнь не предполагается.
+                Мы летим на север Пакистана, в горы. Как известно, в горах часто неустойчивая погода. Поэтому, мы должны
+                иметь несколько запасных дней (2-3 дня) для возвращения из города Гилгит в город Исламабад.</p>
+
+            <div class="vn">
+                <img src="Assets/b66d8a22169d66e911c11e6cddcedf49.png">
+                <p>Район посещения Гилгит-Балтистан на сегодняшний день является абсолютно безопасным для туризма.
+                    Основная религия Пакистана – мусульманство в различных своих течениях. Необходимо уважительное
+                    отношение к религии. Это относится в первую очередь к одежде: и женщинам и мужчинам рекомендуется
+                    одежда, закрывающая руки, ноги и плечи. Для женщин: если вы берете платья, просьба брать длинные в
+                    пол.</p>
+            </div>
+            <p>Район посещения Гилгит-Балтистан на сегодняшний день является абсолютно безопасным для туризма. Основная
+                религия Пакистана – мусульманство в различных своих течениях. Необходимо уважительное отношение к
+                религии. Это относится в первую очередь к одежде: и женщинам и мужчинам рекомендуется одежда,
+                закрывающая руки, ноги и плечи. Для женщин: если вы берете платья, просьба брать длинные в пол.</p>
+            <p> Если ВЫ готовы подвергать себя тяготам и лишениям в этой экспедиции, не будете ныть и ворчать,
+                ознакомились с программой и приняли её как данность, готовы ко всему вышеописанному, то WELCOME в
+                экспедиционную команду!</p>
+            <img src="Assets/foto.jpg">
+        </div>
+
+        <div class="slf">
+
+            <div class="fn">
+                <h3>Осень <span>в Пакистане</span>, самое хорошее время для путешествия, температура воздуха днём
+                    порядка +20 градусов.
+                    НО, мы будем подниматься в горы, поэтому необходимо брать в минимальном количестве теплую одежду.
+                </h3>
+
+                <p>Осень в Пакистане, самое хорошее время для путешествия, температура воздуха днём порядка +20
+                    градусов.
+                    НО, мы будем подниматься в горы, поэтому необходимо брать в минимальном количестве теплую одежду.
+                    Максимальный трек в горах составляет 6 км до северного базового лагеря Нанга Парбат, Фейри Медоуз (2
+                    часа) – высота 3200 метров. Средняя высота всей поездки 2000 метров.
+
+                </p>
+                <p> Единственный перевал, который мы проедем за половину дня - Плато Диосай, высота 4000 метров. Горная
+                    болезнь не предполагается.
+                    Мы летим на север Пакистана, в горы. Как известно, в горах часто неустойчивая погода. Поэтому, мы
+                    должны
+                    иметь несколько запасных дней (2-3 дня) для возвращения из города Гилгит в город Исламабад.</p>
+            </div>
+
+
+            <div class="bl">
+                <h2>БЛИЖАЙШИЕ <span>ТУРЫ</span></h2>
+                <a href="главная.html#in">Смотреть все ТУРЫ</a>
+            </div>
+        </div>
+        <div class="form">
+            <p class="left"><b>Мы строим маршрут</b> так, чтобы за неделю показать самые интересные места региона.
+                Включаем в
+                программу только лучшее проживание, транспорт, питание, людей и достопримечательности. <b>Работаем с
+                    группами</b> до 10 человек и лично их сопровождаем.</p>
+
+            <img src="Assets/компас.PNG">
+            <p class="right"><b>Мы строим маршрут</b> так, чтобы за неделю показать самые интересные места региона.
+                Включаем в
+                программу только лучшее проживание, транспорт, питание, людей и достопримечательности. <b>Работаем с
+                    группами</b> до 10 человек и лично их сопровождаем.</p>
+        </div>
+        <div class="forma">
+            <h1>МЫ ВСЕГДА НА СВЯЗИ!</h1>
+            <div class="v">
+                <form>
+
+                    <input type="text" id="username" name="username" placeholder="ИМЯ" required>
+
+
+                    <input type="email" id="email" name="email" placeholder="ВАШ НОМЕР ТЕЛЕФОНА" required>
+
+                    <input type="password" id="password" name="password" placeholder="ВАША ЭЛЕКТРОННАЯ ПОЧТА" required>
+
+                </form><button type="submit">ОТПРАВИТЬ</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <nav>
+                <h2>О компании</h2>
+                <ul>
+                    <li><a href="">Преимущества</a></li>
+                    <li><a href="">Команда</a></li>
+                    <li><a href="">Фотоотчеты</a></li>
+                    <li><a href="">Документы и лицензии</a></li>
+
+                </ul>
+            </nav>
+
+            <nav>
+                <h2>Услуги</h2>
+                <ul>
+                    <li><a href="">Выбрать тур</a></li>
+                    <li><a href="">Бронь</a></li>
+                    <li><a href="">Оплата </a></li>
+                    <li><a href="">Гарантия</a></li>
+
+                </ul>
+            </nav>
+            <img src="Assets/logo.PNG" class="L">
+            <nav>
+                <h2>Контакты</h2>
+                <ul>
+                    <li><img src="Assets/icons8-gps-50.png"><a href="">Москва</a></li>
+                    <li><img src="Assets/icons8-телефон-50.png"><a href="">8 800 555 35 35</a></li>
+                    <li><img src="Assets/icons8-конверт-50.png"><a href="">aaaa@aaaa.com</a></li>
+
+
+                </ul>
+            </nav>
+        </div>
+        <hr>
+        <p>Политика обработки персональных данныx</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Байкал</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="b.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="menu">
+                <div class="nav">
+                    <a href="главная.html"><img class="logo" src="Assets/logo1.PNG"></a>
+
+                    <nav>
+                        <a href="">Групповые туры</a>
+                        <a href="kruize.html">Круизы</a>
+
+                        <div class="menu-burger">
+                            <button class="ham">
+                                <!-- X and menu icon SVGs from material icons https://material.io/resources/icons/ -->
+                                
+                                <span class="xIcon material-icons">
+                                  close
+                                </span>
+                              </button>
+                              <ul class="menuu">
+                                <li><a class="menuLink" href="главная.html">Главная</a></li>
+                                <li><a class="menuLink" href="pakistan.html">Северный Пакистан</a></li>
+                                <li><a class="menuLink" href="kruize.html">Круизы</a></li>
+                                <li><a class="menuLink" href="kalendar.html">Календарь</a></li>
+                                <li><a class="menuLink" href="kontact.html">Контакты</a></li>
+                                <li><a class="menuLink" href="idea.html">Идеи путешествий</a></li>
+                                <li><a class="menuLink" href="baikal.html">Байкал</a></li>
+                                <li><a class="menuLink" href="antarctida.html">Антарктида</a></li>
+                                <li><a class="menuLink" href="statia.html">Статья</a></li>
+
+                              </ul>
+                        </div>
+                    </nav>
+                </div>
+                <script>
+                    var menu = document.querySelector(".menuu")
+var ham = document.querySelector(".ham")
+var xIcon = document.querySelector(".xIcon")
+var menuIcon = document.querySelector(".menuIcon")
+
+ham.addEventListener("click", toggleMenu)
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    xIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    xIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+var menuLinks = document.querySelectorAll(".menuLink")
+
+menuLinks.forEach(
+  function (menuLink) {
+    menuLink.addEventListener("click", toggleMenu)
+  }
+)
+                </script>
+
+
+            <div class="slaider">
+
+                <div class="info">
+
+                    <h1>
+                        Индивидуальный тур <span>по Байкалу</span>
+                    </h1>
+                    <p>На этой странице вы найдете более 40 идей для путешествия по Байкалу. Выберите, что вам
+                        интересно, и мы разработаем для вас индивидуальную программу поездки.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        </div>
+
+
+    </header>
+    <main>
+
+
+        <div class="bron">
+            <div class="smt">
+                <p>Бронирование турa</p><span>Оставьте ваши данные и мы перезвоним вам для уточнения всех деталей для
+                    более точного бронирования!</span>
+            </div>
+            <div class="but">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Ваш номер телефона" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <input type="email" placeholder="Ваш email">
+                <button><a href="">ЗАБРОНИРОВАТЬ</a></button>
+            </div>
+        </div>
+
+        <div class="dream">
+            <div class="dr">
+                <h1>Байкальский лед </h1>
+                <h1><span>ваша мечта?</span></h1>
+            </div>
+            <b>Если увидеть знаменитый Байкальский лед — ваша давняя мечта, но формат сборных групп вам не подходит,
+                предлагаем отправиться в индивидуальное путешествие. Мы покажем вам самые необыкновенные уголки зимнего
+                Байкала. Предложим маршрут, в котором все приключения, экскурсии и активности вы сможете выбрать
+                сами.</b>
+
+            <div class="l">
+                <p>Мы неоднократно были на Байкале зимой и хорошо понимаем, как сделать это путешествие идеальным. </p>
+                <p>На этой странице мы собрали самые интересные места, самые необычные впечатления и самые комфортные
+                    отели на Байкале. Вам остается только выбрать, а все организационные вопросы мы берем на себя.</p>
+
+                <button><a href="">Подробнее</a></button>
+            </div>
+            <img src="Assets/icons8-стрелка-24.png">
+        </div>
+        <div class="wait">
+            <h1>Что вас <span>ожидает</span></h1>
+
+            <div class="all">
+                <div class="left">
+                    <img
+                        src="https://s3-alpha-sig.figma.com/img/4f7e/50d6/ded70f079017ae6747db0673bef786a8?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nZlYzgrKRzNWPvfuQm8TyMgr8ePedP5zDIacJSzlHfVFg8Y32tUn0NiojlZos0ChvzejveDmzHBBfvwAwhI9qFC-BIKxGBnbiDAmaVpYt4ngmPVSvb1Yi1iZfyseUtNxmOKK5oYscURz9pXQt7d2lgn-BXKABWQuZ9SS62-yOYxaohMnnuXQguEGmtY~oFZwahqIUx~vmogV7m3cp8AoEacFIdc~aRwCibOfv0sg0FBVnbxNb1jjVVdCz5TBWiOUp4ucSO6pZNr7tlYAHtRGOsgRNpQIFJgkkVwNetlTjRpn--xCGUKgbhFZqeWzSrL~ZzOYXiZxON0v06N0v~WvZQ__">
+                    <figcaption>Февраль и март — время «ледовых» экспериментов. Природа создает самые разнообразные
+                        узоры:
+                        ледяные наплески, торосы, гроты, глубокие трещины и знаменитые «байкальские пузырьки».
+                    </figcaption>
+                </div>
+                <div class="cent">
+                    <b>Байкал является объектом Всемирного наследия ЮНЕСКО и входит в список Семи чудес России. Побывать
+                        на
+                        легендарном озере зимой и своими глазами увидеть самый чистый в мире лед хотя бы раз в жизни
+                        стоит
+                        каждому.</b>
+                    <p>Зимний Байкал — это целая «вселенная» невероятных ледовых форм, неповторяющихся узоров и самых
+                        необычных оттенков льда. В январе лед словно зеркало, гладкий и прозрачный, как стекло.
+                        В некоторых местах сквозь него идеально просматривается дно на глубине до 15 метров! </p>
+                    <img
+                        src="https://s3-alpha-sig.figma.com/img/2580/d5d2/8ceaf185f5bd8c8f51be311961645a74?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bpNoV4Q-pV425OQ5SoZ-Uzx7hG525Ynvgt4f06HLAHtulxjUQFlnTX1gEzE-0NaHIoRgPMOAwvfd5BWfYCreOZAl66r~DJ0sSq9065Me9GGchyAvZuAp6zAhLIG0FrUUb3kRfpNCEY0tJonPruuDFNOLQdGoM2NdLpqB-1o-2yhzO7ahANGn2ape0PFZOq9CLoU5Ml-EaLYxE9PWQFSDpWdhHdOK6x9g-FW5~SPldm2g2imQzav3pBlwOoZwhkx~V1~lzzA1hOsIvowT5OtYOaSGuQ0Yd6wV8ExsdOnSWAQ0bPWr2VDgJnBJGm3ec1smZNhkCNXo5EEY0lY2liYqoQ__">
+                </div>
+                <div class="right">
+                    <img
+                        src="https://s3-alpha-sig.figma.com/img/78ce/fec6/5d57aee2468bdbb5ddbb5fdfe83e0e79?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jhhFYDtKPV~hm8F3~Q718yiksQUfwvjdsj6xdqwCZhPX4VEkD6CwcJykqRvgrQ6B~Yi7lb8H1WPyc4TdqwXL0uEyiuUWgQDXsKzxOTGLCbV9GQpkHwh4GEy5vo9pOJ18iXJA~hrCr-BvODN67slHd558thUW-K5YkpVpHh4Ff98YXFzfkO5KBsSdRLt7eutiWfZ8TfYlsWjF4IerZCy8EVAQCFMHIopzjOEQYUpV4nHVhCQ-kU0mDbU8tvD61EEZ0fJyy5Lyw9V9rR6q8UDDuvB4swp1tH0nxhFlJNjXZ5gnYOTZicmIOuSqbOHKdYguAnD2-VUGlHqL4J7op3O6lg__">
+                    <p>А в апреле лёд раскалывается на множество айсбергов, на которых вальяжно отдыхают нерпы.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pr">
+            <div class="zag">
+                <h1>
+                    Программа
+                    <span>тура</span>
+                </h1>
+                <p>Наши гиды знают места, где можно найти самый чистый и прозрачный лёд на Байкале, гигантские трещины,
+                    «те самые пузырьки», ледовые пещеры и наплески. Однако, помимо льда, зимой на Байкале можно посетить
+                    еще много интересных мест:</p>
+            </div>
+            <div class="but">
+                <button id="active"><a href="">Интересные места</a></button>
+                <button><a href="">Уникальный опыт</a></button>
+                <button><a href="">Развлечения</a></button>
+
+            </div>
+
+            <div class="cont">
+                <div class="left">
+                    <img
+                        src="https://s3-alpha-sig.figma.com/img/327a/81c5/05db603dba0c098e7e6cef18a1ccb3a4?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D8ZFgs-hg~QDOZ4aepgVZ-0zuiid2KIpDIRTteX6GCl7xLaCBcwhesIe394dlRdB2k7Wncw-ktrx48cvaKaOYbKzz9VAaMK38ixtjCRMQ5yCM9VPgMLqEgvMGU0fUdZHwRQVF8YCahJieoVF-~2Ls~0-p7qsJkklzXSEKUAHdgEdEqGpsaw4arweRpIHeOU43RV1zIUmwSF2qP81hvSrIo8CN0BAhm~Nduu-mT12Kz1D5~qLj-FwHtj7r3dXx~6qD3aTV6uIwVNDBPcjK46bIrnUqLuyHP7PsNWo1vYaqDo2rCHN8G-QAiuDYzyv7IXqRER~fLzullbhqtCG5tbyKQ__">
+                    <p>Мы верим, что путешествия помогают не только отдыхать
+                        и перезагружаться, но и расширять кругозор. И хотим, чтобы ваши поездки с нашей компанией были
+                        максимально наполнены смыслом.</p>
+                </div>
+                <div class="right">
+                    <hr>
+                    <b>Остров Ольхон</b>
+                    <p>Крупнейший остров озера Байкал, известный многообразием ландшафтов и шаманскими святынями</p>
+
+                    <hr>
+                    <b>Остров Огой</b>
+
+                    <hr>
+                    <b>скала Шаманка</b>
+
+                    <hr>
+                    <b>мыс Хобой</b>
+
+
+                    <hr>
+                    <b>Тажеранские степи</b>
+
+                    <hr>
+                    <b>Байкальский заповедник</b>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="new">
+
+            <h1>Попоробуйте <span>новое</span></h1>
+            <p>Что мы предлагаем</p>
+            <div class="sl">
+                <img src="Assets/first.PNG" alt="">
+                <img src="Assets/second.PNG" alt="">
+                <img src="Assets/three.PNG" alt="">
+            </div>
+        </div>
+
+        <div class="comf">
+
+            <div class="zag">
+                <h1>Проживание
+                    <span>с комфортом</span>
+                </h1>
+
+                <p><b> 5 отелей на Байкале, </b>
+                    которые мы рекомендуем</p>
+            </div>
+
+            <div class="but">
+                <button id="active"><a href="">Байкальская резиденция</a></button>
+                <button><a href="">Анастасия</a></button>
+                <button><a href="">Бухта Ая</a></button>
+                <button><a href="">BaikalWood</a></button>
+                <button><a href="">Snow Hotel</a></button>
+
+            </div>
+            <br>
+            <div class="br">
+                <div class="al">
+                    <div class="in">
+                        <b>
+                            «Байкальская резиденция»
+                        </b>
+                        <br>
+                        <p>
+                            Единственный на Байкале лодж-отель категории 5*. Роскошный загородный комплекс,
+                            расположенный на
+                            северном побережье озера Байкал, в 150 метрах от берега в окружении заповедной сибирской
+                            тайги.
+                            Расстояние от Иркутска составляет 800 км, дорога на авто от аэропорта Нижнеангарска займет
+                            20
+                            минут.
+                        </p>
+
+                        <button><a href="">Забронировать</a></button>
+                    </div>
+
+                    <img src="Assets/bk.jpg ">
+                </div>
+
+                <div class="al">
+                    <div class="in">
+                        <b>
+                            На территории отеля расположены:
+                        </b>
+                        <br>
+                        <ul>
+                            <li>Таежная усадьба и дом охотника, офорленные в купеческом стиле, с номерами премиум-класса
+                            </li>
+                            <li>Оздоровительный и SPA-центр с бассейном и сеновалом</li>
+                            <li>Банный комплекс: русская баня, финская сауна, японские офуро и кедровая фитобочка</li>
+                            <li>Ресторан традиционной сибирской кухни</li>
+                            <li>Интерактивный клуб с настольными играми, покерным столом</li>
+                            <li>Бильярдная комната</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="aa"><img
+                            src="https://s3-alpha-sig.figma.com/img/19c0/703a/0b446facfb190554e5ad3a35ec0388bc?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c0D7gfeWsEG0OVPukFpsgOQzv40VqcOzGo0cQO6ppqxhfpTtTsDPcX-hwdlh7Zxcr965IRdDUWtudshvOpLjhyyAQpcS-YI5-jx3BnsVhH8sLYt3dPoNeMKzwnxfgucfE-NGHjwgzLsw8d9m~TFcjl0CLLJhEEYzF9RRlDtgqGOtc-WA0zzsiqmIRYltkywepYvn~LggB~HCuUx9cJ4PaWuWBVAQ0MrYWatbnhBhg7RyNZZzR3JG1qx0TbiEWq70h~w1lgF0QjELqSz1Tzw7yreWZAMskKTFetNgjtC9eQx4rRxT6vFBKn3VdZ6gnN2DCMZf-8tiHeBB8s7XQXstkg__ ">
+                        <figcaption>В 2018 году «Байкальская Резиденция» был признан лучшим загородным отелем мира
+                            в сегменте Luxury.</figcaption>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="clients">
+            <h1>Наши клиенты</h1>
+
+            <hr>
+
+            <div class="cl">
+
+                <img
+                    src="https://s3-alpha-sig.figma.com/img/631f/1865/efef69432316fa7a767493cef114daef?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eZIwSM8OQ6DxmgTv7eRDCI73u23Pcy7m6kLh1NeUTXoVkaH2FOoAdLqmoigwu~R7dx5eOt9ItON5XoxZpvvsGQ-Tn3fWG02BxGDGrh-5M5XUzEThsSCpvhA9xxHQGt7jKwBCKXZnCn8orKUF52G0d4BnGjnOE4MxCkAFpaW-QhpOVzbGOv6tfaruGhW6NGv7q1FEUkW9-T~75tiW57Aow4ggVUNDqS6O8lr5oSli-wBMQGTt1GGrSRcUMrd-l5~P99KfG0c~BUZpoZyHBs30sHxTuw6RNXVAeyRSwRn7Ugaxxl1r2iZh2LUJEhOXZN46qlaKmj2GqkfPuTxFXF4LkA__">
+                <div class="otz">
+
+                    <div class="star">
+                        <b>
+                            4.6 / 5
+                        </b>
+                        <img src="Assets/star2.PNG">
+                    </div>
+                    <hr>
+
+                    <div class="ot">
+                        <b>Михаил Сергеев </b>
+                        <br>
+                        <p>Всё было очень хорошо, несмотря на погодные сюрпризы. Я очень благодарен координатору Ольге,
+                            она большая молодец, окружила нас вниманием, всегда на связи, все проверит, все сверит!
+                            Отдельно хочется отметить транспорт и водителя, Егор большой профессионал и машины отличные!
+                            Гид Владимир Александрович — это просто без комментариев, человек энциклопедия! </p>
+                    </div>
+                    <hr>
+
+                    <div class="ot">
+                        <b>Светлана Егорова</b>
+                        <br>
+                        <p>Вообще честно говоря впечатлений масса, я очень много путешествую, много что видела, но вот
+                            этот лед, это нечто особенное, нереальное! А Владимир Александрович так вдохновенно
+                            рассказывал про то,как цветёт весной степь, что непременно захотелось вернуться!</p>
+                    </div>
+                    <hr>
+
+                    <div class="ot">
+                        <b>Михаил Сергеев </b>
+                        <br>
+                        <p>Всё было очень хорошо, несмотря на погодные сюрпризы. Я очень благодарна координатору Ольге,
+                            она большая молодец, окружила нас вниманием, всегда на связи, все проверит, все сверит!
+                            Отдельно хочется отметить транспорт и водителя, Егор большой профессионал и машины отличные!
+                            Гид Владимир Александрович — это просто без комментариев, человек энциклопедия! </p>
+                    </div>
+
+                    <hr>
+                    <div class="ot">
+                        <b>Наталья Сивак</b>
+                        <br>
+                        <p>Вообще честно говоря впечатлений масса, я очень много путешествую, много что видела, но вот
+                            этот лед, это нечто особенное, нереальное! А Владимир Александрович так вдохновенно
+                            рассказывал про то,как цветёт весной степь, что непременно захотелось вернуться!</p>
+                    </div>
+
+                </div>
+            </div>
+            <p>еще</p>
+        </div>
+
+        <div class="slai">
+
+            <h1>Похожие туры</h1>
+
+            <div class="s1">
+
+                <img
+                    src="https://s3-alpha-sig.figma.com/img/f337/bb26/9719a0da9a2945353f17b152388e1fa4?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pcvleHZOSNzgZssfsbw8oZx2-F9QA~kioU4GJtPWcc9ALwpcWmTIy4tpbkao~4LUgA6~34Kc~h9yrxbp1cfDg4VaZ9jYk4pNwt5DKkeribGbAkJZ14DhRa3NizLZbzgwd9kjNIAo8cm388xkGtIM-nQReZriY3A~AFlrU68bh-mPA8EEhmoZSipHZv6wVX1GN8PzTGvIC~9z89tAUyo079~jOFrZpv7TE9j4C20-NBy~l8w0q21xfCBr0o123F5fanxgVbt0FSrLw5oCzQTWnhvuqumn3~p-ZvOkcbbj9kbGStd7mQAXb~uibqHespddJMOrMd8yLshtoD5wKhclTw__">
+                <div class="i">
+                    <b>Антарктида</b>
+                    <p>Новый год на юге. На самом юге Земли. Здесь не пальмы и теплый песок. Здесь гигантские айсберги,
+                        горбатые киты и любопытные пингвины. Мы знаем самое необычное место, где можно встретить Новый
+                        год. </p>
+                    <br>
+                    <span>Что вас ожидает:</span>
+                    <p>Вы откроете для себя Шестой континент в самый пик антарктического лета. Начало января — лучшее
+                        время для путешествий в Антарктику, когда температура на солнце достигает +15°С.</p>
+                
+                <button>Забронировать</button>    </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="form">
+            <p class="left"><b>Мы строим маршрут</b> так, чтобы за неделю показать самые интересные места региона.
+                Включаем в
+                программу только лучшее проживание, транспорт, питание, людей и достопримечательности. <b>Работаем с
+                    группами</b> до 10 человек и лично их сопровождаем.</p>
+
+
+            <img src="Assets/компас.PNG">
+            <p class="right"><b>Мы строим маршрут</b> так, чтобы за неделю показать самые интересные места региона.
+                Включаем в
+                программу только лучшее проживание, транспорт, питание, людей и достопримечательности. <b>Работаем с
+                    группами</b> до 10 человек и лично их сопровождаем.</p>
+        </div>
+        <div class="forma">
+            <h1>МЫ ВСЕГДА НА СВЯЗИ!</h1>
+            <div class="v">
+                <form>
+
+                    <input type="text" id="username" name="username" placeholder="ИМЯ" required>
+
+
+                    <input type="email" id="email" name="email" placeholder="ВАШ НОМЕР ТЕЛЕФОНА" required>
+
+                    <input type="password" id="password" name="password" placeholder="ВАША ЭЛЕКТРОННАЯ ПОЧТА" required>
+
+                </form><button type="submit">ОТПРАВИТЬ</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <nav>
+                <h2>О компании</h2>
+                <ul>
+                    <li><a href="">Преимущества</a></li>
+                    <li><a href="">Команда</a></li>
+                    <li><a href="">Фотоотчеты</a></li>
+                    <li><a href="">Документы и лицензии</a></li>
+
+                </ul>
+            </nav>
+
+            <nav>
+                <h2>Услуги</h2>
+                <ul>
+                    <li><a href="">Выбрать тур</a></li>
+                    <li><a href="">Бронь</a></li>
+                    <li><a href="">Оплата </a></li>
+                    <li><a href="">Гарантия</a></li>
+
+                </ul>
+            </nav>
+            <img src="Assets/logo.PNG" class="L">
+            <nav>
+                <h2>Контакты</h2>
+                <ul>
+                    <li><img src="Assets/icons8-gps-50.png"><a href="">Москва</a></li>
+                    <li><img src="Assets/icons8-телефон-50.png"><a href="">8 800 555 35 35</a></li>
+                    <li><img src="Assets/icons8-конверт-50.png"><a href="">aaaa@aaaa.com</a></li>
+
+
+                </ul>
+            </nav>
+        </div>
+        <hr>
+        <p>Политика обработки персональных данныx</p>
+    </footer>
+</body>
+
+</html>
